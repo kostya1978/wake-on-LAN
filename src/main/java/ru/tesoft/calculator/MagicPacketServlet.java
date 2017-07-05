@@ -39,8 +39,7 @@ public class MagicPacketServlet extends HttpServlet {
       wakeOnLanBean.setIsMagicPacket(false);
     }
 
-    RequestDispatcher view = request.getRequestDispatcher("index.jsp");
-    view.forward(request, response);
+    response.sendRedirect("index.jsp");
   }
 
 }
